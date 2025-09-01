@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { Phone, MapPin, Clock } from "lucide-react"
+import categories from "@/data/products.json";
 
 export default function HomePage() {
   return (
@@ -44,84 +45,33 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Burfi Category */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
-                  <img
-                    src="/traditional-indian-burfi-sweets-colorful-squares.png"
-                    alt="Traditional Burfi Sweets"
-                    className="w-32 h-32 object-cover rounded-lg"
-                  />
-                </div>
-                <h3 className="text-2xl font-serif font-bold text-foreground mb-3">Burfi</h3>
-                <p className="text-muted-foreground mb-4">
-                  Rich, dense milk-based sweets in various flavors including coconut, pistachio, and cashew. Perfect for
-                  special occasions.
-                </p>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-                >
-                  <Link href="/categories#burfi">View Burfi Collection</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Traditional Sweets Category */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
-                  <img
-                    src="/traditional-indian-sweets-gulab-jamun-rasgulla-col.png"
-                    alt="Traditional Indian Sweets"
-                    className="w-32 h-32 object-cover rounded-lg"
-                  />
-                </div>
-                <h3 className="text-2xl font-serif font-bold text-foreground mb-3">Traditional Sweets</h3>
-                <p className="text-muted-foreground mb-4">
-                  Classic favorites like Gulab Jamun, Rasgulla, and Jalebi. Time-tested recipes that bring joy to every
-                  celebration.
-                </p>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-                >
-                  <Link href="/categories#sweets">View Sweet Collection</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Balls Category */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-6">
-                <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
-                  <img
-                    src="/indian-sweet-balls-laddu-coconut-balls-round-sweet.png"
-                    alt="Indian Sweet Balls"
-                    className="w-32 h-32 object-cover rounded-lg"
-                  />
-                </div>
-                <h3 className="text-2xl font-serif font-bold text-foreground mb-3">Balls</h3>
-                <p className="text-muted-foreground mb-4">
-                  Delightful round sweets including Laddu, Coconut balls, and Date balls. Bite-sized happiness in every
-                  piece.
-                </p>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
-                >
-                  <Link href="/categories#balls">View Ball Collection</Link>
-                </Button>
-              </CardContent>
-            </Card>
+            {categories.map((category) => (
+              <Card key={category.slug} className="group hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
+                    <img
+                      src={category.image}
+                      alt={category.title}
+                      className="w-32 h-32 object-cover rounded-lg"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold text-foreground mb-3">{category.title}</h3>
+                  <p className="text-muted-foreground mb-4">
+                    {category.description}
+                  </p>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors bg-transparent"
+                  >
+                    <Link href={`/categories#${category.slug}`}>View {category.title} Collection</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section className="py-16 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,7 +100,7 @@ export default function HomePage() {
             </div>
             <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
               <img
-                src="/traditional-indian-sweet-shop-family-business-heri.png"
+                src="company.png"
                 alt="Our Heritage"
                 className="w-full h-full object-cover rounded-lg"
               />

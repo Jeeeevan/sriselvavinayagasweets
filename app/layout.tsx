@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Montserrat } from "next/font/google"
+// 1. Import Anek_Tamil instead of Tiro_Tamil
+import { Montserrat, Anek_Tamil } from "next/font/google" 
 import { Open_Sans } from "next/font/google"
 import "./globals.css"
 
@@ -8,7 +9,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-montserrat",
-  weight: ["400", "600", "700", "900"], // Including Black weight for headings
+  weight: ["400", "600", "700", "900"],
 })
 
 const openSans = Open_Sans({
@@ -17,6 +18,14 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
   weight: ["400", "500", "600"],
 })
+
+// 2. Configure the Anek Tamil font
+const anekTamil = Anek_Tamil({
+  subsets: ["tamil"],
+  display: "swap",
+  variable: "--font-anek-tamil", // Use a new variable name
+  weight: ["400", "700"], // Anek Tamil supports multiple weights
+});
 
 export const metadata: Metadata = {
   title: "Mithai Palace - Traditional Indian Sweets",
@@ -31,7 +40,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable} antialiased`}>
+    // 3. Add the new font variable to the html tag
+    <html lang="en" className={`${montserrat.variable} ${openSans.variable} ${anekTamil.variable} antialiased`}>
       <body className="font-sans">{children}</body>
     </html>
   )

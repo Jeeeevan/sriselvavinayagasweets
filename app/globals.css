@@ -117,6 +117,7 @@
   --font-sans: var(--font-open-sans);
   --font-serif: var(--font-montserrat);
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  ---font-tamil: var(--font-anek-tamil);
 }
 
 @layer base {

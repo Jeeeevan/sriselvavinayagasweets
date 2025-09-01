@@ -15,11 +15,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/logo.png" 
-              alt="Mithai Palace Logo"
-              width={40} 
-              height={40} 
-              className="h-10 w-auto" 
+              src="/logo.png"
+              alt="SSVS Logo"
+              width={60}
+              height={60}
+              className="h-16 w-auto"
             />
             <div className="text-sm text-muted-foreground hidden sm:block">Sri Selva Vinayaga Sweets</div>
           </Link>
