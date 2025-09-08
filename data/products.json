@@ -2,82 +2,87 @@
   {
     "slug": "burfi",
     "title": "Burfi",
-    "description": "Rich, dense milk-based sweets in various flavors including coconut, pistachio, and cashew. Perfect for special occasions.",
+    "description": "Rich, dense milk-based sweets...",
     "image": "burfi.png",
     "items": [
       {
         "name": "Coconut Burfi",
-        "price": "₹250/kg",
-        "tamilName": "தேங்காய் மிட்டாய்",
-        "image": "/products/coconut-burfi.png"
+        "tamilName": "தேங்காய் பர்பி",
+        "image": "/products/coconut-burfi.png",
+        "variants": []
       },
       {
         "name": "Peanut Burfi",
-        "price": "₹450/kg",
-        "tamilName": "கடலை மிட்டாய்",
-        "image": "/products/peanut-burfi.png"
+        "tamilName": "கடலை பர்பி",
+        "image": "/products/peanut-burfi.png",
+        "variants": [
+          { "type": "200g Box", "price": "₹150", "image": "/products/peanut-burfi-200g.png" },
+          { "type": "500g Box", "price": "₹350", "image": "/products/peanut-burfi-500g.png" },
+          { "type": "25 Piece Jar", "price": "₹400", "image": "/products/peanut-burfi-25pc.png" },
+          { "type": "50 Piece Jar", "price": "₹750", "image": "/products/peanut-burfi-50pc.png" }
+        ]
       },
       {
         "name": "Crushed Peanut Burfi",
-        "price": "₹400/kg",
-        "tamilName": "இடித்த கடலை மிட்டாய்",
-        "image": "/products/crushed-peanut-burfi.png"
+        "tamilName": "இடித்த கடலை பர்பி",
+        "image": "/products/crushed-peanut-burfi.png",
+        "variants": []
       },
       {
         "name": "Ginger Burfi",
-        "price": "₹300/kg",
-        "tamilName": "இஞ்சி மிட்டாய்",
-        "image": "/products/ginger-burfi.png"
+        "tamilName": "இஞ்சி பர்பி",
+        "image": "/products/ginger-burfi.png",
+        "variants": []
       },
       {
         "name": "Aska Burfi",
-        "price": "₹350/kg",
-        "tamilName": "அஸ்கா மிட்டாய்",
-        "image": "/products/aska-burfi.png"
+        "tamilName": "அஸ்கா பர்பி",
+        "image": "/products/aska-burfi.png",
+        "variants": []
       }
     ]
   },
   {
     "slug": "sweets",
     "title": "Traditional Sweets",
-    "description": "Classic favorites like Gulab Jamun, Rasgulla, and Jalebi. Time-tested recipes that bring joy to every celebration.",
+    "description": "Classic favorites that bring joy...",
     "image": "sweets.png",
     "items": [
       {
         "name": "Thaen Mittai",
-        "price": "₹200/kg",
         "tamilName": "தேன் மிட்டாய்",
-        "image": "/products/thaen-mittai.png"
+        "image": "/products/thaen-mittai.png",
+        "variants": []
       },
       {
         "name": "Mysore Pak",
-        "price": "₹180/kg",
         "tamilName": "மைசூர் பாகு",
-        "image": "/products/mysore-pak.png"
+        "image": "/products/mysore-pak.png",
+        "variants": []
       },
       {
         "name": "Soft Mysore Pak",
-        "price": "₹220/kg",
         "tamilName": "சாஃப்ட் மைசூர் பாகு",
-        "image": "/products/soft-mysore-pak.png"
+        "image": "/products/soft-mysore-pak.png",
+        "variants": []
       },
       {
         "name": "Dry Jamun",
-        "price": "₹500/kg",
         "tamilName": "உலர் ஜாமுன்",
-        "image": "/products/dry-jamun.png"
+        "image": "/products/dry-jamun.png",
+        "variants": []
       },
       {
         "name": "Vedi Cake",
-        "price": "₹500/kg",
         "tamilName": "வெடி கேக்",
-        "image": "/products/vedi-cake.png"
+        "image": "/products/vedi-cake.png",
+        "variants": []
       },
       {
         "name": "Badusha",
-        "price": "₹500/kg",
         "tamilName": "பாதுஷா",
-        "image": "/products/badusha.png"
+        "image": "/products/badusha.png",
+        "variants": []
       }
     ]
   }

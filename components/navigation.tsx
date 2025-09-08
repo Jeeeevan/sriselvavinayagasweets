@@ -21,7 +21,7 @@ export function Navigation() {
               height={60}
               className="h-16 w-auto"
             />
-            <div className="text-sm text-muted-foreground hidden sm:block">Sri Selva Vinayaga Sweets</div>
+            <div className="text-sm text-muted-foreground hidden sm:block">Since 1995</div>
           </Link>
 
           {/* Desktop Navigation */}

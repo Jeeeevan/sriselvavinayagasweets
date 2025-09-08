@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-black text-foreground mb-6">
-              Traditional Indian Sweets
+              Sri Selva Vinayaga Sweets
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Crafted with love and tradition, our authentic Indian sweets bring the taste of home to your celebrations.
@@ -141,7 +141,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-2xl font-serif font-black text-primary mb-4">मिठाई पैलेस</div>
+              <div className="text-2xl font-serif font-black text-primary mb-4">Sri Selva Vinayaga Sweets</div>
               <p className="text-muted-foreground mb-4">
                 Traditional Indian sweets made with love and authentic recipes passed down through generations.
               </p>
@@ -179,7 +179,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Mithai Palace. All rights reserved.</p>
+            <p>&copy; 2024 Sri Selva Vinayaga Sweets Palace. All rights reserved.</p>
           </div>
         </div>
       </footer>

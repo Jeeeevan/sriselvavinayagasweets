@@ -71,7 +71,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-serif font-bold text-foreground mb-2">Phone</h3>
-                        <p className="text-muted-foreground">+1 (234) 567-8900</p>
+                        <p className="text-muted-foreground">+91 9095555535</p>
+                        <p className="text-muted-foreground">+91 9486381132</p>
                         <p className="text-sm text-muted-foreground">Mon-Sat: 9AM-8PM</p>
                       </div>
                     </div>
@@ -86,8 +87,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-serif font-bold text-foreground mb-2">Email</h3>
-                        <p className="text-muted-foreground">orders@mithaipalace.com</p>
-                        <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
+                        <p className="text-muted-foreground">sriselvavinayaga@gmail.com</p>
+                        
                       </div>
                     </div>
                   </CardContent>
@@ -226,56 +227,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-          </div>
 
-          <div className="space-y-6">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-serif font-bold text-foreground mb-3">How do I place an order?</h3>
-                <p className="text-muted-foreground">
-                  You can place an order by calling us at +1 (234) 567-8900, sending us an email, or using the contact
-                  form above. We'll confirm your order details and provide pickup/delivery information.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-serif font-bold text-foreground mb-3">Do you offer delivery?</h3>
-                <p className="text-muted-foreground">
-                  Yes, we offer delivery within a 15-mile radius of our store. Delivery charges may apply based on
-                  distance. Please contact us for specific delivery information for your area.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-serif font-bold text-foreground mb-3">How fresh are your sweets?</h3>
-                <p className="text-muted-foreground">
-                  All our sweets are made fresh daily using traditional methods. We recommend consuming them within 3-5
-                  days for the best taste and quality. Storage instructions are provided with each order.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-serif font-bold text-foreground mb-3">Do you take custom orders?</h3>
-                <p className="text-muted-foreground">
-                  We specialize in custom orders for weddings, festivals, and special occasions. Please contact us at
-                  least 48 hours in advance for custom orders to ensure availability.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

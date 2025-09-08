@@ -28,7 +28,7 @@ const anekTamil = Anek_Tamil({
 });
 
 export const metadata: Metadata = {
-  title: "Mithai Palace - Traditional Indian Sweets",
+  title: " Sri Selva Vinayaga Sweets - Traditional Indian Sweets",
   description:
     "Authentic traditional Indian sweets made with love. Explore our collection of Burfi, traditional sweets, and more.",
   generator: "v0.app",
