@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { Phone, MapPin, Clock } from "lucide-react"
-import categories from "@/data/products.json";
+import categories from "@/data/products.json"; 
 
 export default function HomePage() {
   return (
@@ -44,15 +44,18 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* MODIFICATION 1: Centered the cards using flexbox */}
+          <div className="flex flex-wrap gap-8 justify-center">
             {categories.map((category) => (
-              <Card key={category.slug} className="group hover:shadow-lg transition-shadow duration-300">
+              // Added width constraints to the card for better responsive behavior
+              <Card key={category.slug} className="group hover:shadow-lg transition-shadow duration-300 w-full max-w-sm">
                 <CardContent className="p-6">
-                  <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center">
+                  <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
+                    {/* MODIFICATION 2: Made the image fill its container */}
                     <img
                       src={category.image}
                       alt={category.title}
-                      className="w-32 h-32 object-cover rounded-lg"
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <h3 className="text-2xl font-serif font-bold text-foreground mb-3">{category.title}</h3>
@@ -72,6 +75,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* About Section */}
       <section className="py-16 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -165,21 +169,21 @@ export default function HomePage() {
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span>+1 (234) 567-8900</span>
+                  <span>+91 99945 13331</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
-                  <span>123 Sweet Street, City, State</span>
+                  <span>143, West Sambandam Road, R.S. Puram, Coimbatore</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>Mon-Sat: 9AM-8PM</span>
+                  <span>Mon-Sun: 9AM-10PM</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Sri Selva Vinayaga Sweets Palace. All rights reserved.</p>
+            <p>&copy; 2024 Sri Selva Vinayaga Sweets. All rights reserved.</p>
           </div>
         </div>
       </footer>
