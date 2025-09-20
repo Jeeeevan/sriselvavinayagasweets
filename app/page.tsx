@@ -2,7 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import { Phone, MapPin, Clock } from "lucide-react"
+import { Phone, MapPin, Clock,Mail } from "lucide-react"
 import categories from "@/data/products.json"; 
 
 export default function HomePage() {
@@ -44,14 +44,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* MODIFICATION 1: Centered the cards using flexbox */}
           <div className="flex flex-wrap gap-8 justify-center">
             {categories.map((category) => (
-              // Added width constraints to the card for better responsive behavior
               <Card key={category.slug} className="group hover:shadow-lg transition-shadow duration-300 w-full max-w-sm">
                 <CardContent className="p-6">
                   <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-6 flex items-center justify-center overflow-hidden">
-                    {/* MODIFICATION 2: Made the image fill its container */}
                     <img
                       src={category.image}
                       alt={category.title}
@@ -131,7 +128,7 @@ export default function HomePage() {
               size="lg"
               className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              <Link href="tel:+1234567890">
+              <Link href="tel:+919095555535">
                 <Phone className="h-5 w-5 mr-2" />
                 Call Now
               </Link>
@@ -169,15 +166,28 @@ export default function HomePage() {
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span>+91 99945 13331</span>
+                  <a href="tel:+919095555535" className="hover:underline">+91 90955 55535</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <a href="mailto:sriselvavinayaga@gmail.com" className="hover:underline">
+                    sriselvavinayaga@gmail.com
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
-                  <span>143, West Sambandam Road, R.S. Puram, Coimbatore</span>
+                  <a
+                    href="https://maps.app.goo.gl/59mzTxAicvrdgwLt8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    1/622, Opposite MVS Thottam, Eachanari, Coimbatore - 641021
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>Mon-Sun: 9AM-10PM</span>
+                  <span>Mon-Sat: 9AM-8PM</span>
                 </div>
               </div>
             </div>
