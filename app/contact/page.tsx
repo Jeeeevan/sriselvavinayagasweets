@@ -127,7 +127,6 @@ export default function ContactPage() {
                       <h3 className="font-serif font-bold text-foreground mb-2">Hours</h3>
                       <div className="text-muted-foreground space-y-1">
                         <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                        <p>Sunday: 10:00 AM - 6:00 PM</p>
                       </div>
                     </div>
                   </CardContent>
