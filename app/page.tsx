@@ -80,7 +80,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">Our Heritage</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                For over three generations, our family has been crafting authentic Indian sweets using traditional
+                For over three decades, our family has been crafting authentic Indian sweets using traditional
                 methods and the finest ingredients. Every sweet tells a story of our rich cultural heritage and
                 unwavering commitment to quality.
               </p>
